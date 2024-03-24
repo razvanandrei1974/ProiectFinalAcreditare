@@ -7,7 +7,7 @@
 ```
 create database VanzariOnline;
 ```
-### 📍 **Am creat tabela cu numele** : _" Angajati "_ 
+### :large_orange_diamond: **Am creat tabela cu numele** : _" Angajati "_ 
 ```
 create table Angajati
 (
@@ -20,7 +20,7 @@ Oras varchar(25),
 primary key(AngajatID)
 );
 ```
-### 📍 **Am creat tabela cu numele** : _" Departamente "_ 
+### :large_orange_diamond: **Am creat tabela cu numele** : _" Departamente "_ 
 
 ```
 create table Departamente
@@ -32,7 +32,8 @@ Oras varchar(30),
 primary key(DepartamentID)
 );
 ```
-
+### :large_orange_diamond: **Am creat tabela cu numele** : _" Salarizare "_
+```
 create table Salarizare
 (
 ID int,
@@ -43,7 +44,9 @@ Salar int,
 Functie varchar(25),
 primary key(ID)
 );
-
+```
+### :large_orange_diamond: **Am creat tabela cu numele** : _" Produse "_ 
+```
 create table Produse
 (
 IDProdus int,
@@ -54,7 +57,9 @@ Pret int,
 Oras varchar(25),
 primary key (IDProdus)
 );
-
+```
+### :large_orange_diamond: **Am creat tabela cu numele** : _" Comenzi "_ 
+```
 create table Comenzi
 (
 IDComanda int,
@@ -66,7 +71,7 @@ Pret int,
 Oras varchar(25),
 primary key (IDComanda)
 );
-
+```
 select * from Departamente;
 
 ALTER TABLE Departamente
