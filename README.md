@@ -1,7 +1,12 @@
-# ProiectFinalAcreditare
+# :orange_square: Proiect Final Acreditare
 
+### 📌 Proiect creat in MySQL Workbench
+![MySql](https://github.com/razvanandrei1974/Proiect-MySQL-Testare-Manuala/blob/main/MySQL1.jpg) 
+
+### 📌 **Am creat baza de date cu numele** : _" Vanzari Online "_ 
 ```
 create database VanzariOnline;
+```
 
 create table Angajati
 (
