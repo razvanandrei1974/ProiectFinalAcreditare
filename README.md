@@ -7,7 +7,8 @@
 ```
 create database VanzariOnline;
 ```
-
+### 📍 **Am creat tabela cu numele** : _" Angajati "_ 
+```
 create table Angajati
 (
 AngajatID int,
@@ -18,8 +19,10 @@ Departament varchar(25),
 Oras varchar(25),
 primary key(AngajatID)
 );
+```
+### 📍 **Am creat tabela cu numele** : _" Departamente "_ 
 
-
+```
 create table Departamente
 (
 DepartamentID int,
@@ -28,6 +31,7 @@ NumarAngajati int,
 Oras varchar(30),
 primary key(DepartamentID)
 );
+```
 
 create table Salarizare
 (
