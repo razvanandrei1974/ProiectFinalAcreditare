@@ -7,6 +7,9 @@
 ```
 create database VanzariOnline;
 ```
+# 📌 Instructiuni **DDL** :
+ ### Create, Alter, Drop, Truncate 
+ 
 ### :large_orange_diamond: **Am creat tabela cu numele** : _" Angajati "_ 
 ```
 create table Angajati
@@ -74,9 +77,11 @@ primary key (IDComanda)
 ```
 select * from Departamente;
 
+### :large_orange_diamond: **Am sters coloana Oras ** din tabela "Departamente" 
+```
 ALTER TABLE Departamente
 DROP COLUMN Oras;
-
+```
 insert into Departamente(DepartamentID,Denumire_Departament,NumarAngajati) values
 (1001,'Administratie',12),
 (1002,'Vanzari',8),
