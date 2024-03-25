@@ -318,7 +318,7 @@ select denumire,stoc from produse;
 ![Coloane denumire si stoc](https://github.com/razvanandrei1974/ProiectFinalAcreditare/blob/main1/Coloane%20denumire%20si%20stoc.jpg)
 
 
-### :yellow_square: **Am interogat tabela "SAlarizare" pentru a vedea numele, prenumele si salarul fiecarui angajat din firma ** :
+### :yellow_square: **Am interogat tabela "Salarizare" pentru a vedea numele, prenumele si salarul fiecarui angajat din firma ** :
 ```
 select nume, prenume, salar from salarizare;
 ```
