@@ -482,6 +482,7 @@ INNER JOIN angajati a
 ON c.Functia = a.Functia
 WHERE a.AngajatID < 1030;
 ```
+![Subquery](https://github.com/razvanandrei1974/ProiectFinalAcreditare/blob/main1/Subquery.jpg)
 
 
 
