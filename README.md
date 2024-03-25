@@ -82,28 +82,21 @@ select * from Departamente;
 ALTER TABLE Departamente
 DROP COLUMN Oras;
 ```
-insert into Departamente(DepartamentID,Denumire_Departament,NumarAngajati) values
-(1001,'Administratie',12),
-(1002,'Vanzari',8),
-(1003,'Caserie',6),
-(1004,'ComenziOnline',25),
-(1005,'Garantii',4),
-(1006,'Contabilitate',4),
-(1007,'Distributie',40),
-(1008,'ReturProduse',10);
 
-
+### :large_orange_diamond: **Am inlocuit in tabela "Departamente" denumirea coloanei Oras cu Termen de livrare  ** 
+```
 alter table Produse 
 change Oras TermenLivrare varchar(20);
-
+```
+### :large_orange_diamond: Am adaugat in tabela "Produse" coloana "Specificatii"
+```
 ALTER TABLE Produse
 ADD Specificatii varchar(40);
+```
 
 insert into Produse(IDProdus,Denumire,Categorie,Stoc,Pret,TermenLivrare,Specificatii) values
 (1001,'Notebook Lenovo','Notebook',26,2750,'2 zile','Intel I3'),
 (1002,'Smartphone Motorola','Telefoane',145,1835,'3 zile','30 Edge');
-
-select * from Produse;
 
 
 create table Facturi
@@ -121,10 +114,7 @@ insert into Facturi(IDFactura,SerieFactura,NumarFactura,Cantitate,PretUnitar,Val
 (12002,'ROCS','025699',8,135,1080,1285),
 (12003,'ROCS','025700',2,2560,5120,6093);
 
-
-
 TRUNCATE TABLE Facturi;
-
 
 DROP TABLE Facturi;
 
@@ -132,7 +122,21 @@ alter table Angajati
 modify Prenume varchar(40);
 
 
+# 📌 Instructiuni **DML** :
+ ### Insert, Delete, Update 
 
+ ### :large_blue_diamond: **Am populat tabela "Departamente" cu denumirea celor 8 departamente ale firmei :
+```
+insert into Departamente(DepartamentID,Denumire_Departament,NumarAngajati) values
+(1001,'Administratie',12),
+(1002,'Vanzari',8),
+(1003,'Caserie',6),
+(1004,'ComenziOnline',25),
+(1005,'Garantii',4),
+(1006,'Contabilitate',4),
+(1007,'Distributie',40),
+(1008,'ReturProduse',10);
+```
 
 Insert into Angajati(AngajatID,Nume,Prenume,Functia,Departament,Oras) values
 (1001,'ACSINTE','AURELIAN','AgentVanzari','Vanzari','Brasov'),
