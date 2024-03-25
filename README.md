@@ -440,7 +440,9 @@ select * from salarizare cross join angajati;
 ```
 select * from angajati inner join salarizare on salarizare.ID=angajati.AngajatID ;
 ```
-![InnerJoin angajati si Salarizare](https://github.com/razvanandrei1974/ProiectFinalAcreditare/blob/main1/Engineering%20Diagram.jpg)
+![InnerJoin angajati si Salarizare](https://github.com/razvanandrei1974/ProiectFinalAcreditare/blob/main1/InnerJoin%20angajati%20si%20salarizare.jpg)
+
+
 select * from produse inner join comenzi on produse.Denumire=comenzi.DenumireProdus;
 
 insert into comenzi(IDComanda,DenumireProdus,Cantitate,Departament,NumeVanzator,Pret,Oras) values
