@@ -311,9 +311,18 @@ WHERE Pret > 1250;
 ```
 ![Tabela Pret 1250](https://github.com/razvanandrei1974/ProiectFinalAcreditare/blob/main1/Tabela%20produse%20cu%20pret%20mai%20mare%20de%201250%20lei.jpg) 
 
+### :yellow_square: **Am interogat tabela "Produse" pentru a vedea coloanele : denumire si stoc ** :
+```
 select denumire,stoc from produse;
+```
+![Coloane denumire si stoc](https://github.com/razvanandrei1974/ProiectFinalAcreditare/blob/main1/Coloane%20denumire%20si%20stoc.jpg)
+
+
 
 select nume, prenume, salar from salarizare;
+
+
+
 
 select * from salarizare where salar = 5200;
 
