@@ -338,12 +338,13 @@ select * from produse where Denumire in ("Smartphone", "DesktopPC");
 ```
 select * from angajati where Functia in ("AgentVanzari" , "OperatorVanzari");
 ```
-![Agent de vanzari si operator vanzari](https://github.com/razvanandrei1974/ProiectFinalAcreditare/blob/main1/tabela%20denumire%20smartphone%20si%20desktopPC.jpg
-select * from salarizare where salar between 7500 and 13000;
+![Agent de vanzari si operator vanzari](https://github.com/razvanandrei1974/ProiectFinalAcreditare/blob/main1/Agenti%20de%20vanzari%20si%20Operator%20vanzari.jpg)
+
 
 select * from angajati where nume like 'ba%';
 
 select * from produse where categorie like 't%';
+
 
 select * from produse
 where denumire like 's%'
