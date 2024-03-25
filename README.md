@@ -256,24 +256,29 @@ UPDATE Produse
 SET Stoc = 85 , Brand = 'Motorola'
 WHERE IDProdus = 1002;
 ```
-
+### :large_orange_diamond: Am sters din tabela "Produse", produsul cu ID 1020 :**
+```
 DELETE FROM Produse WHERE IDProdus=1020;
-
+```
+### :large_orange_diamond: Am modificat in tabela "Salarizare" prenumele si salarul pentru angajatul cu ID 1011 :**
+```
 UPDATE Salarizare
 SET Prenume = 'Florin-Marius' , Salar = 6000
 WHERE ID = 1011;
-
+```
+ ### :large_blue_diamond: **Am verificat daca inlocuirea s-a facut cu succes:**
 select * from salarizare;
 
+ ### :large_blue_diamond: **Am adaugat inca un produs in tabela produse, produsul cu ID 1021 :**
+```
 INSERT INTO Produse (IDProdus,Denumire,Categorie,Stoc,Pret,TermenLivrare) VALUES
 (1021,'Tableta','Telefoane',100,720,'5 zile');
-
-
-
+```
+ ### :large_blue_diamond: **Am sters produsul cu ID 1021 prin filtrare cu where :**
+```
 delete from produse where IDProdus = 1021;
-
-
-
+```
+ ### :large_blue_diamond: **Am verificat daca inlocuirea s-a facut cu succes:**
 SELECT nume, prenume
 FROM Salarizare;
 
