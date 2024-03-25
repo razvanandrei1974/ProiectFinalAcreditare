@@ -282,8 +282,13 @@ delete from produse where IDProdus = 1021;
 SELECT nume, prenume
 FROM Salarizare;
 
+# 📌 Instructiuni **DQL** :
+ ### select, filtrare cu where, filtrări cu like, filtrări cu AND și OR, funcții agregate, filtrări pe funcții agregate, joinuri - inner join, left join, right join, cross join, limite, order by, chei primare, chei secundare)
 
+ ### :yellow_square: **Am selectat toate coloanele din tabela "Produse" ** :
+```
 select * from produse;
+```
 
 SELECT DISTINCT Oras FROM Angajati;
 
