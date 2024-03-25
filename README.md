@@ -77,7 +77,7 @@ primary key (IDComanda)
 ```
 select * from Departamente;
 
-### :large_orange_diamond: **Am sters coloana Oras ** din tabela "Departamente" 
+### :large_orange_diamond: **Am sters coloana Oras ** din tabela "Departamente" **
 ```
 ALTER TABLE Departamente
 DROP COLUMN Oras;
@@ -88,7 +88,7 @@ DROP COLUMN Oras;
 alter table Produse 
 change Oras TermenLivrare varchar(20);
 ```
-### :large_orange_diamond: Am adaugat in tabela "Produse" coloana "Specificatii"
+### :large_orange_diamond: Am adaugat in tabela "Produse" coloana "Specificatii"**
 ```
 ALTER TABLE Produse
 ADD Specificatii varchar(40);
@@ -125,7 +125,7 @@ modify Prenume varchar(40);
 # 📌 Instructiuni **DML** :
  ### Insert, Delete, Update 
 
- ### :large_blue_diamond: **Am populat tabela "Departamente" cu denumirea celor 8 departamente ale firmei :
+ ### :large_blue_diamond: **Am populat tabela "Departamente" cu denumirea celor 8 departamente ale firmei :**
 ```
 insert into Departamente(DepartamentID,Denumire_Departament,NumarAngajati) values
 (1001,'Administratie',12),
@@ -137,7 +137,7 @@ insert into Departamente(DepartamentID,Denumire_Departament,NumarAngajati) value
 (1007,'Distributie',40),
 (1008,'ReturProduse',10);
 ```
- ### :large_blue_diamond: **Am populat tabela "Angajati" cu datele celor 25 angajati ai firmei :
+ ### :large_blue_diamond: **Am populat tabela "Angajati" cu datele celor 25 angajati ai firmei :**
 ```
 Insert into Angajati(AngajatID,Nume,Prenume,Functia,Departament,Oras) values
 (1001,'ACSINTE','AURELIAN','AgentVanzari','Vanzari','Brasov'),
@@ -167,7 +167,7 @@ Insert into Angajati(AngajatID,Nume,Prenume,Functia,Departament,Oras) values
 (1025,'CIUMAC-ICHIM','GHEORGHE','Contabil','Contabilitate','Brasov'),
 (1026,'CIUREA','ANDRA','Contabil Sef','Contabilitate','Brasov');
 ```
- ### :large_blue_diamond: **Am populat tabela "Salarizare" cu numele, prenumele, functia, salarul si orasul celor 25 angajati ai firmei :
+ ### :large_blue_diamond: **Am populat tabela "Salarizare" cu numele, prenumele, functia, salarul si orasul celor 25 angajati ai firmei :**
  ```
 Insert into Salarizare(ID,Nume,Prenume,Oras,Salar,Functie) values
 (1001,'ACSINTE','AURELIAN','Brasov',4250,'AgentVanzari'),
@@ -197,22 +197,25 @@ Insert into Salarizare(ID,Nume,Prenume,Oras,Salar,Functie) values
 (1025,'CIUMAC-ICHIM','GHEORGHE','Brasov',7325,'Contabil'),
 (1026,'CIUREA','ANDRA','Brasov',9600,'Contabil Sef');
 ```
- ### :large_blue_diamond: **Am modificat numarul de caractere din coloana "Prenume" :
+ ### :large_blue_diamond: **Am modificat numarul de caractere din coloana "Prenume" :**
 ```
 alter table Angajati
 modify Prenume varchar(40);
 ```
 
-
-
-
+ ### :large_blue_diamond: **Am selectata toate coloanele din tabela "Produse":**
+ ```
 select * from Produse;
-
+```
+ ### :large_blue_diamond: **Am sters toate datele din tabela "Produse":**
+```
 truncate table Produse;
-
+```
+ ### :large_blue_diamond: **Am adaugat coloana "Brand" in tabela "Produse":**
+```
 ALTER TABLE Produse
 ADD Brand varchar(40);
-
+```
 insert into Produse(IDProdus,Denumire,Categorie,Stoc,Pret,TermenLivrare,Specificatii,Brand) values
 (1001,'Notebook','Laptop',26,2750,'2 zile','Intel I3','Lenovo'),
 (1002,'Smartphone','Telefoane',145,1835,'3 zile','30 Edge','Motorola'),
