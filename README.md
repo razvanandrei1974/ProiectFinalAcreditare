@@ -431,7 +431,7 @@ primary key (IDcomandaInd),
 constraint fk_FirmaVanzari_ComenziDeschise foreign key ( ciID) references FirmaVanzari(fvID)
 );
 ```
-![Engineering Diagram](https://github.com/razvanandrei1974/ProiectFinalAcreditare/blob/main1/Produse%20cu%20s%20si%20termen%20de%20livrare%20cu%203.jpg)
+![Engineering Diagram](https://github.com/razvanandrei1974/ProiectFinalAcreditare/blob/main1/diag%204.mwb)
 
 
 select * from salarizare cross join angajati;
