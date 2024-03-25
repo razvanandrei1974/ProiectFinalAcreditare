@@ -380,6 +380,10 @@ select count(*) from angajati;
 ```
 
 ### :yellow_square: **Am creat tabelele ComenziDeschise, ComenziDeschise, FirmaVanzari  pentru a face legatura cu tabela "Produse" si "Comenzi"cu ajutorul cheilor secundare "** :
+1.Am creat intre coloana prID din tabela ComenziDeschise legatura cu coloana IDProdus din tabela Produse prin intermediul cheii secundare (Foreign-key). 
+2.Am creat intre coloana prID din tabela ComenziDeschise legatura cu coloana IDComanda din tabela Comenzi prin intermediul cheii secundare (Foreign_key).
+3.Am creat intre coloana anID din tabela Firma_Vanzari legatura cu coloana ID din tabela Salarizare prin intermediul cheii secundare (Foreign_key).
+4.Am creat intre coloana fvID din tabela Firma_Vanzari legatura cu coloana AngajatID din tabela Angajati prin intermediul cheii secundare (Foreign_key).
 ```
 create table ComenziDeschise (
 cdID int not null auto_increment, 
@@ -418,17 +422,6 @@ data_angajarii  date not null,
 anID int not null,
 primary key (fvID),
 constraint fk_FirmaVanzari_Salarizare foreign key (anID) references angajati(AngajatID) 
-);
-```
-```
-create table ComenziIndividuale (
-IDcomandaInd int not null,
-cdID int not null,
-IDProdus int not null,
-Cantitate int not null,
-ciID int not null,
-primary key (IDcomandaInd),
-constraint fk_FirmaVanzari_ComenziDeschise foreign key ( ciID) references FirmaVanzari(fvID)
 );
 ```
 ![Engineering Diagram](https://github.com/razvanandrei1974/ProiectFinalAcreditare/blob/main1/Engineering%20Diagram.jpg)
