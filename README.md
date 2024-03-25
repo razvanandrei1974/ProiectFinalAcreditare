@@ -302,7 +302,8 @@ SELECT DISTINCT Oras FROM Angajati;
 SELECT * FROM Salarizare
 WHERE Salar=4250;
 ```
-![Tabela Salar 4250](https://github.com/razvanandrei1974/ProiectFinalAcreditare/blob/main1/tABELA%20ORASE.jpg) 
+![Tabela Salar 4250](https://github.com/razvanandrei1974/ProiectFinalAcreditare/blob/main1/Angajati%20salar%204250.jpg) 
+
 
 SELECT * FROM Produse
 WHERE Pret > 1250;
