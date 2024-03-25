@@ -478,7 +478,7 @@ INNER JOIN Angajati ON Produse.IDProdus = Produse.IDProdus)
 GROUP BY Denumire
 HAVING COUNT(Produse.IDProdus) >1;
 ```
-![Having]https://github.com/razvanandrei1974/ProiectFinalAcreditare/blob/main1/Having.jpg)
+![Having](https://github.com/razvanandrei1974/ProiectFinalAcreditare/blob/main1/Having.jpg)
 
 
 
