@@ -309,7 +309,7 @@ WHERE Salar=4250;
 SELECT * FROM Produse
 WHERE Pret > 1250;
 ```
-![Tabela Pret 1250](https://github.com/razvanandrei1974/ProiectFinalAcreditare/blob/main1/Angajati%20salar%204250.jpg) 
+![Tabela Pret 1250](https://github.com/razvanandrei1974/ProiectFinalAcreditare/blob/main1/Tabela%20produse%20cu%20pret%20mai%20mare%20de%201250%20lei.jpg) 
 
 select denumire,stoc from produse;
 
