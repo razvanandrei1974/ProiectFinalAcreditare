@@ -331,7 +331,7 @@ select nume, prenume, salar from salarizare;
 ```
 select * from produse where Denumire in ("Smartphone", "DesktopPC");
 ```
-![Produse smarthone si desktopPC](https://github.com/razvanandrei1974/ProiectFinalAcreditare/blob/main1/tabela%20denumire%20smartphone%20si%20desktopPC.jpg
+![Produse smarthone si desktopPC](https://github.com/razvanandrei1974/ProiectFinalAcreditare/blob/main1/tabela%20denumire%20smartphone%20si%20desktopPC.jpg)
 
 
 ### :yellow_square: **Am interogat tabela "Salarizare" pentru a vedea angajatii cu functia de Agent de vanzari si Operator Vanzari** :
