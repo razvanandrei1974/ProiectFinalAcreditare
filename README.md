@@ -366,6 +366,7 @@ and Brand like 'm%';
 
 
 
+
 select sum(salar) from salarizare;
 select avg(salar) from salarizare;
 select min(salar) from salarizare;
