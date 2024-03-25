@@ -354,16 +354,16 @@ select * from produse
 where denumire like 's%'
 and TermenLivrare like '3%';
 ```
+![Agent de vanzari si operator vanzari](https://github.com/razvanandrei1974/ProiectFinalAcreditare/blob/main1/Produse%20cu%20s%20si%20termen%20de%20livrare%20cu%203.jpg)
 
+### :yellow_square: **Am interogat tabela "Produse" pentru a vedea produsele care incep cu litera "s" si au un termen de livrare care incepe cu cifra "3" si brandul cu litera "m"** :
+```
 select * from produse
 where denumire like 's%'
 or TermenLivrare like '3%'
 and Brand like 'm%';
+```
 
-select * from produse
-where (denumire like 's%'
-or TermenLivrare like '3%')
-and Brand like 'm%';
 
 
 select sum(salar) from salarizare;
