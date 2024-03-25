@@ -291,7 +291,11 @@ select * from produse;
 ```
 ![Tabela Produse](https://github.com/razvanandrei1974/ProiectFinalAcreditare/blob/main1/Tabela%20produse.jpg) 
 
+### :yellow_square: **Am interogat tabela "Angajati" pentru a vedea din ce orase sunt angajatii firmei" ** :
+```
 SELECT DISTINCT Oras FROM Angajati;
+```
+![Tabela Produse](https://github.com/razvanandrei1974/ProiectFinalAcreditare/blob/main1/Tabela%20produse.jpg) 
 
 
 SELECT * FROM Salarizare
