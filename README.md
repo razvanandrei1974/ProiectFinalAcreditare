@@ -436,10 +436,11 @@ constraint fk_FirmaVanzari_ComenziDeschise foreign key ( ciID) references FirmaV
 
 select * from salarizare cross join angajati;
 
-
-# Extragem informatiile comune intre cele doua tabele
+### :yellow_square: **Am interogat tabelele "Angajati" si " Salarizare" pentru a vedea informatiile comune din ambele tabele dupa ID "** :
+```
 select * from angajati inner join salarizare on salarizare.ID=angajati.AngajatID ;
-
+```
+![InnerJoin angajati si Salarizare](https://github.com/razvanandrei1974/ProiectFinalAcreditare/blob/main1/Engineering%20Diagram.jpg)
 select * from produse inner join comenzi on produse.Denumire=comenzi.DenumireProdus;
 
 insert into comenzi(IDComanda,DenumireProdus,Cantitate,Departament,NumeVanzator,Pret,Oras) values
