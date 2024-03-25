@@ -470,6 +470,17 @@ from produse o inner join produse p on p.IDProdus = o.IDProdus;
 ```
 ![InnerJoin produse si owner](https://github.com/razvanandrei1974/ProiectFinalAcreditare/blob/main1/InnerJoin%20produse%20si%20coloana%20categorii.jpg)
 
+### :yellow_square: **Am interogat tabelele Produse si Angajati si a fost afisata lista cu comenzi pe fiecare denumire in parte**:
+```
+SELECT Produse.Denumire, COUNT(Produse.IDProdus) AS NumarComenzi
+FROM (Produse
+INNER JOIN Angajati ON Produse.IDProdus = Produse.IDProdus)
+GROUP BY Denumire
+HAVING COUNT(Produse.IDProdus) >1;
+```
+
+
+
 
 
 # 📌 SQL Subquery 
