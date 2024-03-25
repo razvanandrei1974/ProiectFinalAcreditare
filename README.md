@@ -289,6 +289,7 @@ FROM Salarizare;
 ```
 select * from produse;
 ```
+![Tabela Produse](https://github.com/razvanandrei1974/Proiect-MySQL-Testare-Manuala/blob/main/MySQL1.jpg) 
 
 SELECT DISTINCT Oras FROM Angajati;
 
