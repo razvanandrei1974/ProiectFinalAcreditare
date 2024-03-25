@@ -295,7 +295,7 @@ select * from produse;
 ```
 SELECT DISTINCT Oras FROM Angajati;
 ```
-![Tabela Produse](https://github.com/razvanandrei1974/ProiectFinalAcreditare/blob/main1/Tabela%20produse.jpg) 
+![Tabela Orase](https://github.com/razvanandrei1974/ProiectFinalAcreditare/blob/main1/tABELA%20ORASE.jpg) 
 
 
 SELECT * FROM Salarizare
