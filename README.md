@@ -216,6 +216,9 @@ truncate table Produse;
 ALTER TABLE Produse
 ADD Brand varchar(40);
 ```
+
+ ### :large_blue_diamond: **Am populat cu datele si caracteristicile produselor aflate la vanzare  tabela "Produse":**
+```
 insert into Produse(IDProdus,Denumire,Categorie,Stoc,Pret,TermenLivrare,Specificatii,Brand) values
 (1001,'Notebook','Laptop',26,2750,'2 zile','Intel I3','Lenovo'),
 (1002,'Smartphone','Telefoane',145,1835,'3 zile','30 Edge','Motorola'),
@@ -236,21 +239,23 @@ insert into Produse(IDProdus,Denumire,Categorie,Stoc,Pret,TermenLivrare,Specific
 (1018,'ImprimantaJet','PC-Periferice',11,850,'2 zile','Color','Cannon'),
 (1019,'MultifunctionalLaser','PC-Periferice',2,18900,'15 zile','Color','Minolta'),
 (1020,'MultifunctionalJet','PC-Periferice',6,4850,'5 zile','Color','Epson');
-
-
-
+```
+ ### :large_blue_diamond: **Am schimbat functia si orasul pentru angajatul cu ID 1010":**
+```
 UPDATE Angajati
 SET Functia = 'OperatorVanzari', Oras = 'Cluj Napoca'
 WHERE AngajatID = 1010;
-
+```
+ ### :large_blue_diamond: **Am verificat daca inlocuirea s-a facut cu succes:**
+```
 select * from angajati;
-
-
+```
+### :large_blue_diamond: **Am schimbat numarul de produse in stoc si brandul pentru produsul cu ID 1002 :**
+```
 UPDATE Produse
 SET Stoc = 85 , Brand = 'Motorola'
 WHERE IDProdus = 1002;
-
-
+```
 
 DELETE FROM Produse WHERE IDProdus=1020;
 
