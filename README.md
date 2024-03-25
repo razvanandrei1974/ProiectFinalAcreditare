@@ -322,7 +322,9 @@ select denumire,stoc from produse;
 ```
 select nume, prenume, salar from salarizare;
 ```
-![Coloane nume, prenume si salar](https://github.com/razvanandrei1974/ProiectFinalAcreditare/blob/main1/Coloane%20denumire%20si%20stoc.jpg)
+![Coloane nume, prenume si salar](https://github.com/razvanandrei1974/ProiectFinalAcreditare/blob/main1/Coloane%20nume%20prenume%20salar%20angajati.jpg)
+
+
 
 
 
