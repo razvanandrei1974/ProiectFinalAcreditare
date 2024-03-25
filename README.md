@@ -137,7 +137,8 @@ insert into Departamente(DepartamentID,Denumire_Departament,NumarAngajati) value
 (1007,'Distributie',40),
 (1008,'ReturProduse',10);
 ```
-
+ ### :large_blue_diamond: **Am populat tabela "Angajati" cu datele celor 25 angajati ai firmei :
+```
 Insert into Angajati(AngajatID,Nume,Prenume,Functia,Departament,Oras) values
 (1001,'ACSINTE','AURELIAN','AgentVanzari','Vanzari','Brasov'),
 (1002,'ANGELESCU','ANISOARA','Manager','Administratie','Brasov'),
@@ -165,13 +166,9 @@ Insert into Angajati(AngajatID,Nume,Prenume,Functia,Departament,Oras) values
 (1024,'CICMEREAN','MIRCEA','AgentVanzari','Vanzari','Iasi'),
 (1025,'CIUMAC-ICHIM','GHEORGHE','Contabil','Contabilitate','Brasov'),
 (1026,'CIUREA','ANDRA','Contabil Sef','Contabilitate','Brasov');
-
-
-alter table Angajati
-modify Prenume varchar(40);
-
-
-
+```
+ ### :large_blue_diamond: **Am populat tabela "Salarizare" cu numele, prenumele, functia, salarul si orasul celor 25 angajati ai firmei :
+ ```
 Insert into Salarizare(ID,Nume,Prenume,Oras,Salar,Functie) values
 (1001,'ACSINTE','AURELIAN','Brasov',4250,'AgentVanzari'),
 (1002,'ANGELESCU','ANISOARA','Brasov',12600,'Manager'),
@@ -199,6 +196,15 @@ Insert into Salarizare(ID,Nume,Prenume,Oras,Salar,Functie) values
 (1024,'CICMEREAN','MIRCEA','Iasi',4250,'AgentVanzari'),
 (1025,'CIUMAC-ICHIM','GHEORGHE','Brasov',7325,'Contabil'),
 (1026,'CIUREA','ANDRA','Brasov',9600,'Contabil Sef');
+```
+ ### :large_blue_diamond: **Am modificat numarul de caractere din coloana "Prenume" :
+```
+alter table Angajati
+modify Prenume varchar(40);
+```
+
+
+
 
 select * from Produse;
 
