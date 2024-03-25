@@ -485,9 +485,26 @@ WHERE a.AngajatID < 1030;
 ![Subquery](https://github.com/razvanandrei1974/ProiectFinalAcreditare/blob/main1/Subquery.jpg)
 
 
+# 📌 Concluzii
 
-
-
+1. Am creat o baza de date pentru o firma de vanzari online.
+2. Am creat tabelele necesare functionarii bazei de date, dupa cum urmeaza :
+    - Tabela cu datele angajatilor
+    * Tabela cu datele referitoare la salarii
+    + Tabela cu departamentele din firma
+    - Tabela cu produsele pe care le vinde firma
+    * Tabela cu situatia comenzilor 
+    + Tabela cu situatia comenzilor online
+    - Tabela de legatura Comenzi deschise
+    * Tabela de legatura VanzariFirma
+  
+ 3. Am populat tabelele cu datele necesare functionarii bazei de date.
+ 4. Am interogat tabele cu ajutorul instructiunilor SQL pentru a afisa diferite date.
+ 5. Am creat legaturi intre tabele
+ 6. Am sters date din tabele sau am adaugat date in tabele
+ 7. Am calculat valoarea totala sau partiala a unei coloane, de exemplu valoarea totala a salariilor din firma
+ 8. Am creat Diagrama care evidentiaza legaturile intre tabele ( Reverse Engineering Diagram)
+    
 
 
 
