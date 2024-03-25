@@ -442,8 +442,12 @@ select * from angajati inner join salarizare on salarizare.ID=angajati.AngajatID
 ```
 ![InnerJoin angajati si Salarizare](https://github.com/razvanandrei1974/ProiectFinalAcreditare/blob/main1/InnerJoin%20angajati%20si%20salarizare.jpg)
 
-
+### :yellow_square: **Am interogat tabelele "Produse" si " Comenzi" pentru a vedea informatiile comune din ambele tabele dupa Denumire produs "** :
+```
 select * from produse inner join comenzi on produse.Denumire=comenzi.DenumireProdus;
+```
+![InnerJoin produse si comenzi](https://github.com/razvanandrei1974/ProiectFinalAcreditare/blob/main1/InnerJoin%20produse%20si%20comenzi.jpg)
+
 
 insert into comenzi(IDComanda,DenumireProdus,Cantitate,Departament,NumeVanzator,Pret,Oras) values
 (2001,'Smartphone',2,'vanzarionline','Acsinte Aurelian',7200,'Cluj Napoca');
