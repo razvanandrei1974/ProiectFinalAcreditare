@@ -94,11 +94,8 @@ ALTER TABLE Produse
 ADD Specificatii varchar(40);
 ```
 
-insert into Produse(IDProdus,Denumire,Categorie,Stoc,Pret,TermenLivrare,Specificatii) values
-(1001,'Notebook Lenovo','Notebook',26,2750,'2 zile','Intel I3'),
-(1002,'Smartphone Motorola','Telefoane',145,1835,'3 zile','30 Edge');
-
-
+### :large_orange_diamond: Am creat tabela "Facturi"**
+```
 create table Facturi
 (IDFactura int,
 SerieFactura varchar(25),
@@ -108,19 +105,22 @@ PretUnitar int,
 ValoareBruta int,
 ValoareNeta int,
 primary key (IDFactura));
-
+```
+### :large_orange_diamond: Am populat tabela "Facturi" cu trei facturi**
+```
 insert into Facturi(IDFactura,SerieFactura,NumarFactura,Cantitate,PretUnitar,ValoareBruta,ValoareNeta) values
 (12001,'ROCS','025689',12,120,1440,1713),
 (12002,'ROCS','025699',8,135,1080,1285),
 (12003,'ROCS','025700',2,2560,5120,6093);
-
+```
+### :large_orange_diamond: Am sters datele inregistrate in tabela "Facturi"**
+```
 TRUNCATE TABLE Facturi;
-
+```
+### :large_orange_diamond: Am sters in totalitate tabela "Facturi"**
+```
 DROP TABLE Facturi;
-
-alter table Angajati
-modify Prenume varchar(40);
-
+```
 
 # 📌 Instructiuni **DML** :
  ### Insert, Delete, Update 
