@@ -505,7 +505,7 @@ WHERE a.AngajatID < 1030;
  7. Am calculat valoarea totala sau partiala a unei coloane, de exemplu valoarea totala a salariilor din firma
  8. Am creat Diagrama care evidentiaza legaturile intre tabele ( Reverse Engineering Diagram)
 
-![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.](https://myoctocat.com/assets/images/base-octocat.svg)
+##_______________________________________________________________________________________________________
     
 
 
