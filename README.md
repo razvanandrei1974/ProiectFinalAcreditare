@@ -365,17 +365,22 @@ and Brand like 'm%';
 ```
 
 
-
-
+### :yellow_square: **Am interogat tabela salarizare pentru a aflas suma tuturor salariilor, salariul mediu si salariul minim :
+```
 select sum(salar) from salarizare;
 select avg(salar) from salarizare;
 select min(salar) from salarizare;
+```
+
+### :yellow_square: **Am interogat tabela Produse pentru a afla pretul minim, pretul maxim si am calculat cate randuri avem in tabela:**
+```
 select min(pret) from produse;
 select max(pret) from produse;
 select count(*) from angajati;
+```
 
-
-
+### :yellow_square: **Am creat tabelele ComenziDeschise, ComenziDeschise, FirmaVanzari  pentru a face legatura cu tabela "Produse" si "Comenzi"cu ajutorul cheilor secundare "** :
+```
 create table ComenziDeschise (
 cdID int not null auto_increment, 
 status_com varchar(50) not null,
@@ -384,7 +389,8 @@ prID int not null,
 primary key (cdID),
 constraint fk_ComenziDeschise_Produse foreign key (prID) references Produse(IDProdus) 
 );
-
+```
+```
 create table ComenziDeschise1 (
 cdID int not null auto_increment, 
 status_com varchar(50) not null,
@@ -393,7 +399,8 @@ prID int not null,
 primary key (cdID),
 constraint fk_ComenziDeschise_Comenzi foreign key (prID) references Comenzi(IDComanda) 
 );
-
+```
+```
 create table FirmaVanzari (
 fvID int not null auto_increment, 
 status_firma varchar(50) not null,
@@ -402,7 +409,8 @@ anID int not null,
 primary key (fvID),
 constraint fk_FirmaVanzari_Angajati foreign key (anID) references salarizare(ID) 
 );
-
+```
+```
 create table FirmaVanzari1 (
 fvID int not null auto_increment, 
 status_firma varchar(50) not null,
@@ -411,8 +419,8 @@ anID int not null,
 primary key (fvID),
 constraint fk_FirmaVanzari_Salarizare foreign key (anID) references angajati(AngajatID) 
 );
-
-
+```
+```
 create table ComenziIndividuale (
 IDcomandaInd int not null,
 cdID int not null,
@@ -422,12 +430,7 @@ ciID int not null,
 primary key (IDcomandaInd),
 constraint fk_FirmaVanzari_ComenziDeschise foreign key ( ciID) references FirmaVanzari(fvID)
 );
-
-select * from ComenziIndividuale;
-
-insert into ComenziDeschise(cdID,status_com,data_comenzii,prID) values
-(10001,'deschisa','2024-03-15',9999);
-
+```
 
 
 select * from salarizare cross join angajati;
