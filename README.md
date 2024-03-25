@@ -297,10 +297,12 @@ SELECT DISTINCT Oras FROM Angajati;
 ```
 ![Tabela Orase](https://github.com/razvanandrei1974/ProiectFinalAcreditare/blob/main1/tABELA%20ORASE.jpg) 
 
-
+### :yellow_square: **Am interogat tabela "Angajati" pentru a vedea angajatii fiemei care primesc un salriu egal cu 4250 lei" ** :
+```
 SELECT * FROM Salarizare
 WHERE Salar=4250;
-
+```
+![Tabela Salar 4250](https://github.com/razvanandrei1974/ProiectFinalAcreditare/blob/main1/tABELA%20ORASE.jpg) 
 
 SELECT * FROM Produse
 WHERE Pret > 1250;
