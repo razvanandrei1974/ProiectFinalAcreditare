@@ -297,7 +297,7 @@ SELECT DISTINCT Oras FROM Angajati;
 ```
 ![Tabela Orase](https://github.com/razvanandrei1974/ProiectFinalAcreditare/blob/main1/tABELA%20ORASE.jpg) 
 
-### :yellow_square: **Am interogat tabela "Angajati" pentru a vedea angajatii fiemei care primesc un salariu egal cu 4250 lei" ** :
+### :yellow_square: **Am interogat tabela "Angajati" pentru a vedea angajatii firmei care primesc un salariu egal cu 4250 lei" ** :
 ```
 SELECT * FROM Salarizare
 WHERE Salar=4250;
@@ -318,13 +318,13 @@ select denumire,stoc from produse;
 ![Coloane denumire si stoc](https://github.com/razvanandrei1974/ProiectFinalAcreditare/blob/main1/Coloane%20denumire%20si%20stoc.jpg)
 
 
-
+### :yellow_square: **Am interogat tabela "SAlarizare" pentru a vedea numele, prenumele si salarul fiecarui angajat din firma ** :
+```
 select nume, prenume, salar from salarizare;
+```
+![Coloane nume, prenume si salar](https://github.com/razvanandrei1974/ProiectFinalAcreditare/blob/main1/Coloane%20denumire%20si%20stoc.jpg)
 
 
-
-
-select * from salarizare where salar = 5200;
 
 select * from produse where Denumire in ("Smartphone", "DesktopPC");
 select * from angajati where Functia in ("AgentVanzari" , "OperatorVanzari");
