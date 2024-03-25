@@ -341,14 +341,19 @@ select * from angajati where Functia in ("AgentVanzari" , "OperatorVanzari");
 ![Agent de vanzari si operator vanzari](https://github.com/razvanandrei1974/ProiectFinalAcreditare/blob/main1/Agenti%20de%20vanzari%20si%20Operator%20vanzari.jpg)
 
 
+### :yellow_square: **Am interogat tabela "Angajati" pentru a vedea angajatii a caror nume incepe cu literele "ba" sau cu litera "t" ** :
+```
 select * from angajati where nume like 'ba%';
-
+```
+```
 select * from produse where categorie like 't%';
-
-
+```
+### :yellow_square: **Am interogat tabela "Produse" pentru a vedea produsele care incep cu litera "s" si au un termen de livrare care incepe cu cifra "3" ** :
+```
 select * from produse
 where denumire like 's%'
 and TermenLivrare like '3%';
+```
 
 select * from produse
 where denumire like 's%'
