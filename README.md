@@ -464,14 +464,20 @@ select * from produse right join comenzi on produse.Denumire=comenzi.DenumirePro
 
 # SQL Extras
 
+### :yellow_square: **Am interogat tabelel salarizare si produse pentru a afisa salariile angajatilor din firma, preturile produselor in ordine descrescatoare si aceasi lista cu produse in ordine descrescatoare dar in limita a trei inregistrari**:
+```
 select * from salarizare order by salar;
 select * from produse order by pret desc;
 select * from produse order by pret desc limit 3;
-
+```
+### :yellow_square: **Am interogat tabela "Produse" si am afisat denumirile si preturile produselor, in acelasi timp creeand si coloana "owner" care afiseaza categoriile produselor :
+```
 select o.IDProdus, p.Denumire, p.Pret, p.categorie owner, p.pret produs
 from produse o inner join produse p on p.IDProdus = o.IDProdus;
-
 ```
+![InnerJoin produse si owner](https://github.com/razvanandrei1974/ProiectFinalAcreditare/blob/main1/InnerJoin%20produse%20si%20coloana%20categorii.jpg)
+
+
 
 
 
