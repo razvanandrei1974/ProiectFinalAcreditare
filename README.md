@@ -472,6 +472,10 @@ from produse o inner join produse p on p.IDProdus = o.IDProdus;
 
 
 
+# 📌 SQL Subquery 
+
+
+
 
 
 
