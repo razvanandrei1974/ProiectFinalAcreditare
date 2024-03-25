@@ -474,6 +474,14 @@ from produse o inner join produse p on p.IDProdus = o.IDProdus;
 
 # 📌 SQL Subquery 
 
+### :yellow_square: **Am interogat tabela "Angajati" cu ajutorul instructiunilor Subquery au fost afisate coloanele AngajatID, Nume, Prenume si Departament . 
+```
+SELECT c.angajatID, a.nume, a.prenume, a.Departament
+FROM angajati c
+INNER JOIN angajati a
+ON c.Functia = a.Functia
+WHERE a.AngajatID < 1030;
+```
 
 
 
