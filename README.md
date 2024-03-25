@@ -327,11 +327,18 @@ select nume, prenume, salar from salarizare;
 
 
 
-
+### :yellow_square: **Am interogat tabela "Produse" pentru a vedea unde sunt inregistrate produsele Smartphone si DesktopPC ** :
+```
 select * from produse where Denumire in ("Smartphone", "DesktopPC");
+```
+![Produse smarthone si desktopPC](https://github.com/razvanandrei1974/ProiectFinalAcreditare/blob/main1/tabela%20denumire%20smartphone%20si%20desktopPC.jpg
+
+
+### :yellow_square: **Am interogat tabela "Salarizare" pentru a vedea angajatii cu functia de Agent de vanzari si Operator Vanzari** :
+```
 select * from angajati where Functia in ("AgentVanzari" , "OperatorVanzari");
-
-
+```
+![Agent de vanzari si operator vanzari](https://github.com/razvanandrei1974/ProiectFinalAcreditare/blob/main1/tabela%20denumire%20smartphone%20si%20desktopPC.jpg
 select * from salarizare where salar between 7500 and 13000;
 
 select * from angajati where nume like 'ba%';
