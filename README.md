@@ -448,19 +448,18 @@ select * from produse inner join comenzi on produse.Denumire=comenzi.DenumirePro
 ```
 ![InnerJoin produse si comenzi](https://github.com/razvanandrei1974/ProiectFinalAcreditare/blob/main1/InnerJoin%20produse%20si%20comenzi.jpg)
 
-
-insert into comenzi(IDComanda,DenumireProdus,Cantitate,Departament,NumeVanzator,Pret,Oras) values
-(2001,'Smartphone',2,'vanzarionline','Acsinte Aurelian',7200,'Cluj Napoca');
-
-
-# Extragem datele comune din tabela Comenzi si tabela Produse
+### :yellow_square: **Am interogat tabelele "Produse" si " Comenzi" pentru a vedea informatiile comune din ambele tabele in functie de tabela din stanga "** :
+```
 select * from produse left join comenzi on produse.Denumire=comenzi.DenumireProdus;
-
-# Extragem datele comune din tabela Comenzi si tabela Produse, dar nu se afiseaza randurile care nu au inregistrari
+```
+### :yellow_square: **Am interogat tabelele "Produse" si " Comenzi" pentru a vedea informatiile comune din ambele tabele in functie de tabela din stanga, dar fara sa afiseze randurile fara inregistrari "** :
+```
 select * from produse left join comenzi on produse.Denumire=comenzi.DenumireProdus where Comenzi.DenumireProdus is not null;
-
-# Extragem datele comune din tabela Produse si tabela Comenzi
+```
+### :yellow_square: **Am interogat tabelele "Produse" si " Comenzi" pentru a vedea informatiile comune din ambele tabele in functie de tabela din dreapta "** :
+```
 select * from produse right join comenzi on produse.Denumire=comenzi.DenumireProdus;
+```
 
 
 # SQL Extras
