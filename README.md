@@ -380,9 +380,8 @@ select count(*) from angajati;
 ```
 
 ### :yellow_square: **Am creat tabelele ComenziDeschise, ComenziDeschise, FirmaVanzari  pentru a face legatura cu tabela "Produse" si "Comenzi"cu ajutorul cheilor secundare "** :
-1. Am creat intre coloana prID din tabela ComenziDeschise legatura cu coloana IDProdus din tabela Produse prin intermediul cheii secundare (Foreign-key). 
-2. Am creat intre coloana prID din tabela ComenziDeschise legatura cu coloana IDComanda din tabela Comenzi prin intermediul cheii secundare (Foreign_key).
-3. Am creat intre coloana anID din tabela Firma_Vanzari legatura cu coloana ID din tabela Salarizare prin intermediul cheii secundare (Foreign_key).
+1. Am creat intre coloana prID din tabela ComenziDeschise legatura cu coloana IDProdus din tabela Produse prin intermediul cheii secundare (Foreign-key). PrimaryKey este "cdID" iar secondary key este "prID". Relatia este 1,n.
+2. Am creat intre coloana anID din tabela Firma_Vanzari legatura cu coloana ID din tabela Salarizare prin intermediul cheii secundare (Foreign_key).
 4. Am creat intre coloana fvID din tabela Firma_Vanzari legatura cu coloana AngajatID din tabela Angajati prin intermediul cheii secundare (Foreign_key).
 ```
 create table ComenziDeschise (
@@ -394,36 +393,7 @@ primary key (cdID),
 constraint fk_ComenziDeschise_Produse foreign key (prID) references Produse(IDProdus) 
 );
 ```
-```
-create table ComenziDeschise1 (
-cdID int not null auto_increment, 
-status_com varchar(50) not null,
-data_comenzii  date not null,
-prID int not null,
-primary key (cdID),
-constraint fk_ComenziDeschise_Comenzi foreign key (prID) references Comenzi(IDComanda) 
-);
-```
-```
-create table FirmaVanzari (
-fvID int not null auto_increment, 
-status_firma varchar(50) not null,
-data_angajarii  date not null,
-anID int not null,
-primary key (fvID),
-constraint fk_FirmaVanzari_Angajati foreign key (anID) references salarizare(ID) 
-);
-```
-```
-create table FirmaVanzari1 (
-fvID int not null auto_increment, 
-status_firma varchar(50) not null,
-data_angajarii  date not null,
-anID int not null,
-primary key (fvID),
-constraint fk_FirmaVanzari_Salarizare foreign key (anID) references angajati(AngajatID) 
-);
-```
+
 ![Engineering Diagram](https://github.com/razvanandrei1974/ProiectFinalAcreditare/blob/main1/Engineering%20Diagram.jpg)
 
 
