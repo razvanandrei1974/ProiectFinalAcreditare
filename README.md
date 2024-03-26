@@ -379,10 +379,8 @@ select max(pret) from produse;
 select count(*) from angajati;
 ```
 
-### :yellow_square: **Am creat tabelele ComenziDeschise, ComenziDeschise, FirmaVanzari  pentru a face legatura cu tabela "Produse" si "Comenzi"cu ajutorul cheilor secundare "** :
-1. Am creat intre coloana prID din tabela ComenziDeschise legatura cu coloana IDProdus din tabela Produse prin intermediul cheii secundare (Foreign-key). PrimaryKey este "cdID" iar secondary key este "prID". Relatia este 1,n.
-2. Am creat intre coloana anID din tabela Firma_Vanzari legatura cu coloana ID din tabela Salarizare prin intermediul cheii secundare (Foreign_key).
-4. Am creat intre coloana fvID din tabela Firma_Vanzari legatura cu coloana AngajatID din tabela Angajati prin intermediul cheii secundare (Foreign_key).
+### :yellow_square: Am creat secondary_key pentru a face legatura intre tabelele Angajati-comenzi-Produse " :
+1. Am creat tabela de legatura "ComenziDeschise" cu tabela "Produse" unde primary_key este coloana "cdID" iar legatura se face prin foreign_key cu coloana prID din tabela ComenziDeschise. Legatura este 1:1 .
 ```
 create table ComenziDeschise (
 cdID int not null auto_increment, 
@@ -392,6 +390,12 @@ prID int not null,
 primary key (cdID),
 constraint fk_ComenziDeschise_Produse foreign key (prID) references Produse(IDProdus) 
 );
+```
+
+2. Am creat legatura intre tabela "Comenzi" si tabela "Angajati" unde primary_key este coloana IDComanda, iar legatura se face prin foreign_key cu coloana AngajatID din tabela Angajati .Legatura este 1:1 . 
+```
+ALTER TABLE comenzi
+ADD FOREIGN KEY (IDComanda) REFERENCES angajati(AngajatID);
 ```
 
 ![Engineering Diagram](https://github.com/razvanandrei1974/ProiectFinalAcreditare/blob/main1/Engineering%20Diagram.jpg)
