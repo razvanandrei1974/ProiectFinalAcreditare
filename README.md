@@ -398,7 +398,7 @@ ALTER TABLE comenzi
 ADD FOREIGN KEY (IDComanda) REFERENCES angajati(AngajatID);
 ```
 
-![Engineering Diagram](https://github.com/razvanandrei1974/ProiectFinalAcreditare/blob/main1/Engineering%20Diagram.jpg)
+![Engineering Diagram](https://github.com/razvanandrei1974/ProiectFinalAcreditare/blob/main1/EER.jpg)
 
 
 select * from salarizare cross join angajati;
