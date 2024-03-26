@@ -379,7 +379,7 @@ select max(pret) from produse;
 select count(*) from angajati;
 ```
 
-### :yellow_square: Am creat secondary_key pentru a face legatura intre tabelele Angajati-comenzi-Produse " :
+### :yellow_square: Am creat secondary_key pentru a face legatura intre tabelele Angajati-Comenzi-Produse " :
 1. Am creat tabela de legatura "ComenziDeschise" cu tabela "Produse" unde primary_key este coloana "cdID" iar legatura se face prin foreign_key cu coloana prID din tabela ComenziDeschise. Legatura este 1:1 .
 ```
 create table ComenziDeschise (
