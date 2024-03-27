@@ -487,7 +487,7 @@ JOIN salarizare AS a ON e.AngajatID = a.ID
 ORDER BY a.ID
 LIMIT 30;
 ```
-![Subquery](https://github.com/razvanandrei1974/ProiectFinalAcreditare/blob/main1/SUBQUERY%202.jpg)
+![Subquery](https://github.com/razvanandrei1974/ProiectFinalAcreditare/blob/main1/SUBQUERY%203.jpg)
 
 
 # 📌 Concluzii
