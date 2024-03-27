@@ -468,7 +468,7 @@ INNER JOIN angajati a
 ON c.Functia = a.Functia
 WHERE a.AngajatID < 1030;
 ```
-### :yellow_square: **Am interogat tabelele "Angajati" si "Salarizare", cu ajutorul instructiunilor Subquery returnandu-ne primele 20 de inregistrari cu ID comun din cele doua tabele, ordonandu-le dupa coloana ID din tabela "Salarizare" .
+### :yellow_square: **Am interogat tabelele "Angajati" si "Salarizare", cu ajutorul instructiunilor Subquery returnandu-ne primele 20 combinand coloane din cele doua tabele, ordonandu-le dupa coloana ID din tabela "Salarizare" .
 ```
 SELECT e.AngajatID,e.Functia,a.Prenume,a.Oras
 FROM angajati AS e
@@ -478,6 +478,8 @@ LIMIT 20;
 ```
 ![Subquery](https://github.com/razvanandrei1974/ProiectFinalAcreditare/blob/main1/SUBQUERY%202.jpg)
 
+### :yellow_square: **Am interogat tabelele "Angajati" si "Salarizare", cu ajutorul instructiunilor Subquery returnandu-ne primele 30 de inregistrari combinand coloane  din cele doua tabele, ordonandu-le dupa coloana ID din tabela "Salarizare" .
+```
 ```
 SELECT e.AngajatID,e.Functia,a.Prenume,a.Oras, a.Salar
 FROM angajati AS e
@@ -485,7 +487,6 @@ JOIN salarizare AS a ON e.AngajatID = a.ID
 ORDER BY a.ID
 LIMIT 30;
 ```
-
 
 
 # 📌 Concluzii
