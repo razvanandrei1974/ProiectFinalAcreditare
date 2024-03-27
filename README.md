@@ -468,6 +468,14 @@ INNER JOIN angajati a
 ON c.Functia = a.Functia
 WHERE a.AngajatID < 1030;
 ```
+
+```
+SELECT e.AngajatID,e.Functia,a.Prenume,a.Oras
+FROM angajati AS e
+JOIN angajati AS a ON e.AngajatID = a.AngajatID
+ORDER BY a.AngajatID
+LIMIT 20;
+```
 ![Subquery](https://github.com/razvanandrei1974/ProiectFinalAcreditare/blob/main1/Subquery.jpg)
 
 
