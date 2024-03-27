@@ -476,6 +476,13 @@ JOIN angajati AS a ON e.AngajatID = a.AngajatID
 ORDER BY a.AngajatID
 LIMIT 20;
 ```
+
+SELECT e.AngajatID,e.Functia,a.Prenume,a.Oras, a.Salar
+FROM angajati AS e
+JOIN salarizare AS a ON e.AngajatID = a.ID
+ORDER BY a.ID
+LIMIT 30;
+
 ![Subquery](https://github.com/razvanandrei1974/ProiectFinalAcreditare/blob/main1/Subquery.jpg)
 
 
