@@ -476,7 +476,7 @@ JOIN salarizare AS a ON e.AngajatID = a.ID
 ORDER BY a.ID
 LIMIT 20;
 ```
-![Subquery](https://github.com/razvanandrei1974/ProiectFinalAcreditare/blob/main1/Having.jpg)
+![Subquery](https://github.com/razvanandrei1974/ProiectFinalAcreditare/blob/main1/SUBQUERY%202.jpg)
 
 ```
 SELECT e.AngajatID,e.Functia,a.Prenume,a.Oras, a.Salar
