@@ -460,14 +460,6 @@ HAVING COUNT(Produse.IDProdus) >1;
 
 # 📌 SQL Subquery 
 
-### :yellow_square: **Am interogat tabela "Angajati" cu ajutorul instructiunilor Subquery au fost afisate coloanele AngajatID, Nume, Prenume si Departament . 
-```
-SELECT c.angajatID, a.nume, a.prenume, a.Departament
-FROM angajati c
-INNER JOIN angajati a
-ON c.Functia = a.Functia
-WHERE a.AngajatID < 1030;
-```
 ### :yellow_square: **Am interogat tabelele "Angajati" si "Salarizare", cu ajutorul instructiunilor Subquery returnandu-ne primele 20 combinand coloane din cele doua tabele, ordonandu-le dupa coloana ID din tabela "Salarizare" .
 ```
 SELECT e.AngajatID,e.Functia,a.Prenume,a.Oras
@@ -488,6 +480,42 @@ ORDER BY a.ID
 LIMIT 30;
 ```
 ![Subquery](https://github.com/razvanandrei1974/ProiectFinalAcreditare/blob/main1/SUBQUERY%203.jpg)
+
+### :yellow_square: **Această interogare secundară va returna fiecare categorie de produse împreună cu cantitatea totală vândută pentru categoria respectivă. 
+```
+SELECT 
+    P.Categorie,
+    (
+        SELECT SUM(C.Cantitate) 
+        FROM Comenzi C 
+        WHERE C.DenumireProdus = P.Denumire
+    ) AS TotalCantitate
+FROM 
+    Produse P;
+```
+![image](https://github.com/razvanandrei1974/ProiectFinalAcreditare/assets/144438182/6113b3f0-b2a2-44f8-91d2-ad7e7775ebe9)
+
+### :yellow_square: Această interogare secundară va returna fiecare departament împreună cu cel mai mare salariu dintre angajații din departamentul respectiv. 
+```
+  SELECT 
+    A.Departament,
+    (
+        SELECT MAX(S.Salar) 
+        FROM Salarizare S 
+        WHERE S.Oras = A.Oras
+    ) AS HighestSalary
+FROM 
+    Angajati A;
+```
+![image](https://github.com/razvanandrei1974/ProiectFinalAcreditare/assets/144438182/04e5d5d3-8707-426f-9887-d62cb80e060b)
+
+### :yellow_square: Această subinterogare va returna toate informațiile despre angajații din tabelul "Angajați" care au intrări corespunzătoare în tabelul "Salarizare"
+```
+SELECT *
+FROM Angajati
+WHERE (Nume, Prenume, Oras) IN (SELECT Nume, Prenume, Oras FROM Salarizare);
+```
+![image](https://github.com/razvanandrei1974/ProiectFinalAcreditare/assets/144438182/e7a44b11-75fd-4b89-b125-822a028c74fb)
 
 
 # 📌 Concluzii
