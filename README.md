@@ -380,7 +380,7 @@ select count(*) from angajati;
 ```
 
 ### :yellow_square: Am creat secondary_key pentru a face legatura intre tabelele Angajati-Comenzi-Produse " :
-1. Am creat tabela de legatura "ComenziDeschise" cu tabela "Produse" unde primary_key este coloana "cdID" iar legatura se face prin foreign_key cu coloana prID din tabela ComenziDeschise. Legatura este 1:1 .
+Am creat tabela de legatura "ComenziDeschise" cu tabela "Produse" unde primary_key este coloana "cdID" iar legatura se face prin foreign_key cu coloana prID din tabela ComenziDeschise. Legatura este 1:1 .
 ```
 create table ComenziDeschise (
 cdID int not null auto_increment, 
@@ -392,16 +392,27 @@ constraint fk_ComenziDeschise_Produse foreign key (prID) references Produse(IDPr
 );
 ```
 
-2. Am creat legatura intre tabela "Comenzi" si tabela "Angajati" unde primary_key este coloana IDComanda, iar legatura se face prin foreign_key cu coloana AngajatID din tabela Angajati .Legatura este 1:1 . 
+2. Am creat legatura intre tabela "Comenzi" si tabela "Angajati" unde primary_key este coloana IDComanda, iar legatura se face prin foreign_key cu coloana AngajatID din tabela Angajati .Legatura este 1:1 .
 ```
 ALTER TABLE comenzi
 ADD FOREIGN KEY (IDComanda) REFERENCES angajati(AngajatID);
 ```
 
+### :yellow_square: Am creat tabela de legatura cat_dep pentru a face legatura intre tabelel “Categorie” si “Departamente” unde primary key este “CatDepID”, iar legatura se face prin cheie secundara “CatID” din tabela “Categorie” si “DepartamentID” din tabela departamnete, legatura fiind 1:1.
+```
+create table Cat_Dep  (
+CatDepID int not null auto_increment, 
+Departament_firma varchar(20) not null,
+Categorie_produs varchar(20), 
+data_comenzii_dep  date not null,
+CatID int not null,
+primary key (CatDepID),
+constraint fk_categorie_departamente foreign key (CatID) references departamente(DepartamentID)
+);
+```
+
 ![EER Diagram](https://github.com/razvanandrei1974/ProiectFinalAcreditare/assets/144438182/c44974e1-3e43-4fb2-a4aa-207201b8875d)
 
-
-select * from salarizare cross join angajati;
 
 ### :yellow_square: **Am interogat tabelele "Angajati" si " Salarizare" pentru a vedea informatiile comune din ambele tabele dupa ID "** :
 ```
