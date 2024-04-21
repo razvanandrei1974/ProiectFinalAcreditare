@@ -413,13 +413,13 @@ constraint fk_categorie_departamente foreign key (CatID) references departamente
 
 ![EER Diagram](https://github.com/razvanandrei1974/ProiectFinalAcreditare/assets/144438182/4e788e21-31e9-46a2-9ca3-a5a706b2332f)
 
- Am creat legtura 1:1 intre tabelele "Departamente" - "Categorie" - "Comenzi deschise" . 
+### :yellow_square: Am creat legtura 1:1 intre tabelele "Departamente" - "Categorie" - "Comenzi deschise" . 
    ![image](https://github.com/razvanandrei1974/ProiectFinalAcreditare/assets/144438182/95b8b2af-a656-4275-a84e-56527d06feff)
 
- Am creat legatura 1:1 intre tabelele "Comenzi" - "ComenziDeschise" - "Produse" '.
+### :yellow_square: Am creat legatura 1:1 intre tabelele "Comenzi" - "ComenziDeschise" - "Produse" '.
    ![image](https://github.com/razvanandrei1974/ProiectFinalAcreditare/assets/144438182/a02137b7-83e5-4731-939b-9a477eb5f700)
 
- Am creat legatura 1:1 intre tabelele "Departamente" si "Cat_Dep".
+### :yellow_square: Am creat legatura 1:1 intre tabelele "Departamente" si "Cat_Dep".
     ![image](https://github.com/razvanandrei1974/ProiectFinalAcreditare/assets/144438182/885131a2-6050-4e93-8c26-be7fd5a26fa7)
 
 
