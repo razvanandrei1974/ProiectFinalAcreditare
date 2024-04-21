@@ -380,7 +380,7 @@ select count(*) from angajati;
 ```
 
 ### :yellow_square: Am creat secondary_key pentru a face legatura intre tabelele Angajati-Comenzi-Produse " :
-1.Am creat tabela de legatura "ComenziDeschise" cu tabela "Produse" unde primary_key este coloana "cdID" iar legatura se face prin foreign_key cu coloana prID din tabela ComenziDeschise. Legatura este 1:1 .
+Am creat tabela de legatura "ComenziDeschise" cu tabela "Produse" unde primary_key este coloana "cdID" iar legatura se face prin foreign_key cu coloana prID din tabela ComenziDeschise. Legatura este 1:1 .
 ```
 create table ComenziDeschise (
 cdID int not null auto_increment, 
@@ -391,22 +391,12 @@ primary key (cdID),
 constraint fk_ComenziDeschise_Produse foreign key (prID) references Produse(IDProdus) 
 );
 ```
-
-2. Am creat legatura intre tabela "Comenzi" si tabela "Angajati" unde primary_key este coloana IDComanda, iar legatura se face prin foreign_key cu coloana AngajatID din tabela Angajati .Legatura este 1:1 .
+ Am creat legatura intre tabela "Comenzi" si tabela "Angajati" unde primary_key este coloana IDComanda, iar legatura se face prin foreign_key cu coloana AngajatID din tabela Angajati .Legatura este 1:1 .
 ```
 ALTER TABLE comenzi
 ADD FOREIGN KEY (IDComanda) REFERENCES angajati(AngajatID);
 ```
-3. Am creat legtura 1:1 intre tabelele "Departamente" - "Categorie" - "Comenzi deschise" . 
-   ![image](https://github.com/razvanandrei1974/ProiectFinalAcreditare/assets/144438182/95b8b2af-a656-4275-a84e-56527d06feff)
-
-4. Am creat 1:1 legatura intre tabelele "Comenzi" - "ComenziDeschise" - "Produse" '.
-   ![image](https://github.com/razvanandrei1974/ProiectFinalAcreditare/assets/144438182/a02137b7-83e5-4731-939b-9a477eb5f700)
-
-5. Am creat legatura 1:1 intre tabelel "Departamente" si "Cat_Dep".
-    ![image](https://github.com/razvanandrei1974/ProiectFinalAcreditare/assets/144438182/885131a2-6050-4e93-8c26-be7fd5a26fa7)
-
-  
+ 
 
 ### :yellow_square: Am creat tabela de legatura cat_dep pentru a face legatura intre tabelel “Categorie” si “Departamente” unde primary key este “CatDepID”, iar legatura se face prin cheie secundara “CatID” din tabela “Categorie” si “DepartamentID” din tabela departamnete, legatura fiind 1:1.
 ```
@@ -421,7 +411,16 @@ constraint fk_categorie_departamente foreign key (CatID) references departamente
 );
 ```
 
-![EER Diagram](https://github.com/razvanandrei1974/ProiectFinalAcreditare/assets/144438182/c44974e1-3e43-4fb2-a4aa-207201b8875d)
+![EER Diagram](https://github.com/razvanandrei1974/ProiectFinalAcreditare/assets/144438182/4e788e21-31e9-46a2-9ca3-a5a706b2332f)
+
+ Am creat legtura 1:1 intre tabelele "Departamente" - "Categorie" - "Comenzi deschise" . 
+   ![image](https://github.com/razvanandrei1974/ProiectFinalAcreditare/assets/144438182/95b8b2af-a656-4275-a84e-56527d06feff)
+
+ Am creat 1:1 legatura intre tabelele "Comenzi" - "ComenziDeschise" - "Produse" '.
+   ![image](https://github.com/razvanandrei1974/ProiectFinalAcreditare/assets/144438182/a02137b7-83e5-4731-939b-9a477eb5f700)
+
+ Am creat legatura 1:1 intre tabelel "Departamente" si "Cat_Dep".
+    ![image](https://github.com/razvanandrei1974/ProiectFinalAcreditare/assets/144438182/885131a2-6050-4e93-8c26-be7fd5a26fa7)
 
 
 ### :yellow_square: **Am interogat tabelele "Angajati" si " Salarizare" pentru a vedea informatiile comune din ambele tabele dupa ID "** :
