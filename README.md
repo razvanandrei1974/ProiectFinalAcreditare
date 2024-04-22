@@ -498,15 +498,14 @@ LIMIT 30;
 ```
 SELECT 
     P.Categorie,
-    (
-        SELECT SUM(C.Cantitate) 
-        FROM Comenzi C 
-        WHERE C.DenumireProdus = P.Denumire
-    ) AS TotalCantitate
+    (SELECT SUM(C.Cantitate * C.Pret) 
+     FROM Comenzi C 
+     WHERE C.DenumireProdus = P.Denumire) AS TotalValoareComenzi
 FROM 
     Produse P;
 ```
-![image](https://github.com/razvanandrei1974/ProiectFinalAcreditare/assets/144438182/6113b3f0-b2a2-44f8-91d2-ad7e7775ebe9)
+![TotalValoareComenzi](https://github.com/razvanandrei1974/ProiectFinalAcreditare/assets/144438182/db4b4717-e052-42e7-9a9d-9ec77128a0a4)
+
 
 ### :yellow_square: Această interogare secundară va returna fiecare departament împreună cu cel mai mare salariu dintre angajații din departamentul respectiv. 
 ```
