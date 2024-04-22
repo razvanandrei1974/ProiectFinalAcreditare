@@ -503,6 +503,8 @@ insert into  Comenzi(IDComanda,DenumireProdus,Cantitate,Departament,NumeVanzator
 (1002,'Notebook',2,'OperatorVanzari','Baiceanu Liliana',12900,'Sibiu'),
 (1003,'MonitorCurbat',8,'AgentVanzari','CICMEREAN MIRCEA',4250,'Iasi');
 ```
+:yellow_square: **Am facut interogarea secundara**
+
 ```
 SELECT 
     P.Categorie,
