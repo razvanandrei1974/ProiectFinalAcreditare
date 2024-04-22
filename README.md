@@ -396,9 +396,7 @@ constraint fk_ComenziDeschise_Produse foreign key (prID) references Produse(IDPr
 ALTER TABLE comenzi
 ADD FOREIGN KEY (IDComanda) REFERENCES angajati(AngajatID);
 ```
- 
-
-### :yellow_square: Am creat tabela de legatura cat_dep pentru a face legatura intre tabelel “Categorie” si “Departamente” unde primary key este “CatDepID”, iar legatura se face prin cheie secundara “CatID” din tabela “Categorie” si “DepartamentID” din tabela departamnete, legatura fiind 1:1.
+ ### :yellow_square: Am creat tabela de legatura cat_dep pentru a face legatura intre tabelel “Categorie” si “Departamente” unde primary key este “CatDepID”, iar legatura se face prin cheie secundara “CatID” din tabela “Categorie” si “DepartamentID” din tabela departamnete, legatura fiind 1:1.
 ```
 create table Cat_Dep  (
 CatDepID int not null auto_increment, 
@@ -410,19 +408,14 @@ primary key (CatDepID),
 constraint fk_categorie_departamente foreign key (CatID) references departamente(DepartamentID)
 );
 ```
-
-![EER Diagram](https://github.com/razvanandrei1974/ProiectFinalAcreditare/assets/144438182/4e788e21-31e9-46a2-9ca3-a5a706b2332f)
-
-### :yellow_square: Am creat legtura 1:1 intre tabelele "Departamente" - "Categorie" - "Comenzi deschise" . 
-   ![image](https://github.com/razvanandrei1974/ProiectFinalAcreditare/assets/144438182/95b8b2af-a656-4275-a84e-56527d06feff)
-
-### :yellow_square: Am creat legatura 1:1 intre tabelele "Comenzi" - "ComenziDeschise" - "Produse" '.
-   ![image](https://github.com/razvanandrei1974/ProiectFinalAcreditare/assets/144438182/a02137b7-83e5-4731-939b-9a477eb5f700)
-
-### :yellow_square: Am creat legatura 1:1 intre tabelele "Departamente" si "Cat_Dep".
-    ![image](https://github.com/razvanandrei1974/ProiectFinalAcreditare/assets/144438182/885131a2-6050-4e93-8c26-be7fd5a26fa7)
+![EER Diagram](https://github.com/razvanandrei1974/ProiectFinalAcreditare/assets/144438182/b23c6b18-0453-4366-b336-4067168001b7)
 
 
+### :yellow_square: Am creat legaturi intre tabelele bazei de date conform tabel :
+
+![image](https://github.com/razvanandrei1974/ProiectFinalAcreditare/assets/144438182/4d542109-1435-46bd-a692-ade2b9d9a89f)
+
+   
 ### :yellow_square: **Am interogat tabelele "Angajati" si " Salarizare" pentru a vedea informatiile comune din ambele tabele dupa ID "** :
 ```
 select * from angajati inner join salarizare on salarizare.ID=angajati.AngajatID ;
