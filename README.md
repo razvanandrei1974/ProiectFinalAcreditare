@@ -494,7 +494,15 @@ LIMIT 30;
 ```
 ![Subquery](https://github.com/razvanandrei1974/ProiectFinalAcreditare/blob/main1/SUBQUERY%203.jpg)
 
-### :yellow_square: **Această interogare secundară va returna fiecare categorie de produse împreună cu cantitatea totală vândută pentru categoria respectivă. 
+### :yellow_square: **Această interogare secundară va returna totalul vanzarilor din fiecare categorie de produse unde au existat comenzi. 
+
+:yellow_square: **Am populat tabela comenzi cu trei comenzi**
+```
+insert into  Comenzi(IDComanda,DenumireProdus,Cantitate,Departament,NumeVanzator,Pret,Oras) values
+(1001,'Smartphone',5,'AgentVanzari','Baciu Elena',1835,'Sibiu'),
+(1002,'Notebook',2,'OperatorVanzari','Baiceanu Liliana',12900,'Sibiu'),
+(1003,'MonitorCurbat',8,'AgentVanzari','CICMEREAN MIRCEA',4250,'Iasi');
+```
 ```
 SELECT 
     P.Categorie,
